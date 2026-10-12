@@ -1,0 +1,170 @@
+$ /opt/pyvenv/bin/python -m compileall -q .
+$ /opt/pyvenv/bin/python test_v186_optimization.py
+PASS test_sqlite_transaction_closed_and_wal
+PASS test_limit_applies_after_cutoff_and_reader_streams
+PASS test_parallel_reads_and_transactional_writes
+PASS test_roc_date_parsing_rejects_invalid_dates
+PASS test_yahoo_bad_ohlc_never_written
+PASS test_analog_golden_no_strategy_drift
+PASS test_full_market_contract_and_four_page_ui
+V18.6 OPTIMIZATION: 7 OFFLINE TESTS PASSED
+$ /opt/pyvenv/bin/python test_v18_multifactor.py
+PASS test_bearish_squeeze_not_buy_signal
+PASS test_factor_catalog_exactly_15
+PASS test_full_service_rank_integrates_new_profile
+PASS test_macro_and_heat_are_entry_only
+PASS test_missing_is_not_invented
+PASS test_next_session_risk_changes_priority_not_selection
+PASS test_official_breadth_one_month_no_fabricated_acceleration
+PASS test_old_snapshot_does_not_skip_new_v18_scan
+PASS test_revenue_acceleration_uses_actual_previous_month
+PASS test_sector_peer_excludes_target_and_requires_same_date
+PASS test_v18_factor_page_offline_render
+PASS test_v18_no_new_network_requests
+PASS test_very_hot_breakout_is_marked_wait_pullback
+ALL 13 V18 FACTOR CONTRACT TESTS PASSED
+$ /opt/pyvenv/bin/python test_v184_integrated.py
+PASS test_eligibility_observation_not_synthetic_winners
+PASS test_fake_verified_without_provenance_is_rejected
+PASS test_historical_universe_does_not_use_todays_survivors
+PASS test_imputation_no_punishment_and_no_invention
+PASS test_live_api_refuses_backdated_observations
+PASS test_live_evidence_cannot_backfill_historical_replay
+PASS test_macro_entry_stale_not_penalized
+PASS test_missing_factors_remain_in_denominator
+PASS test_no_macro_shock_in_quality_ranking
+PASS test_not_applicable_is_excluded_missing_is_not
+PASS test_out_of_sample_unknown_not_invented
+PASS test_pending_requires_real_prior_observation_and_valid_until
+PASS test_pit_fails_closed_even_with_legal_deadline
+PASS test_pit_freshness_type_specific
+PASS test_pit_ledger_versions_and_replay_immutability
+PASS test_replay_never_calls_live_market_data
+PASS test_sector_technical_not_independent_families
+PASS test_universe_rank_stability_preserves_alpha
+PASS test_weights_and_frozen_original_model
+ALL V18.4 INTEGRATED TESTS PASSED (19)
+$ /opt/pyvenv/bin/python test_v185_experience.py
+Alpha Radar V16.7 app import smoke: PASS
+PASS test_combined_card_and_health_panels_render_offline
+PASS test_cross_exchange_rollback_is_not_data_corruption
+PASS test_doctor_avoids_actionable_decisions_on_unverified_market_days
+PASS test_four_core_destinations_and_factor_not_standalone
+PASS test_legacy_snapshot_without_provenance_remains_diagnosable
+PASS test_missing_official_source_is_not_cloned_from_cache
+PASS test_price_mismatch_is_hard_block_even_if_sources_match
+PASS test_repaired_source_warning_does_not_erase_date_sync
+PASS test_true_sync_clear_and_price_coverage_separate
+ALL 9 V18.5 EXPERIENCE TESTS PASSED
+$ /opt/pyvenv/bin/python test_architecture.py
+PASS test_config_weights
+PASS test_entry_separation
+PASS test_regime_only_changes_position
+PASS test_time_matured_intraday_weight
+PASS test_session_phases
+PASS test_limit_up_can_rank_high_but_not_be_buyable
+PASS test_actionable_buy_priority_not_raw_momentum
+PASS test_empirical_confidence_shrinkage
+PASS test_tail_risk_controls_reward_risk
+PASS test_low_evidence_cannot_be_promoted_to_buy
+PASS test_dynamic_full_market_pool_adds_new_live_leader
+PASS test_continuation_entry_is_explicit_but_not_chase
+PASS test_failed_gate_diagnostics_are_specific
+PASS test_validation_protocol_has_at_least_ten_points
+PASS test_validation_holdout_can_reject_overfit_tuning
+PASS test_offline_single_stock_pipeline
+PASS test_utf8_ui_strings_are_clean
+PASS test_cross_horizon_allocation_helpers
+PASS test_app_service_api_contract
+PASS test_app_all_session_contract
+PASS test_offline_run_scan_regime_does_not_rank
+PASS test_postclose_pending_to_final_transition
+PASS test_shared_feature_engine_matches_legacy_calls
+BENCH shared_features=0.0631s separate_3x=0.1161s speedup=1.84x
+ALL TESTS PASSED | v18.4.0-integrated-pit-confidence
+$ /opt/pyvenv/bin/python test_doctor_v16_7.py
+PASS test_breached_model_stop_is_sell
+PASS test_completed_day_buy_is_not_claimed_as_instant_fill
+PASS test_direct_diagnosis_has_completed_day_cutoff_guard
+PASS test_doctor_ui_uses_blank_optional_fields_not_three_zero_inputs
+PASS test_holding_is_separate_from_new_entry_timing
+PASS test_intraday_missing_quote_never_claims_buy
+PASS test_profit_protection_only_after_profit_activation
+PASS test_user_stop_and_broken_thesis_are_hard_overrides
+ALL DOCTOR TESTS PASSED | v17.1.0-synced-briefing
+$ /opt/pyvenv/bin/python test_verified_price_v16_7_1.py
+PASS test_kawahu_limit_down_breaches_model_stop_for_existing_holder
+PASS test_kawahu_limit_down_uses_11790_and_blocks_buy
+PASS test_mis_never_substitutes_previous_close_as_live_price
+PASS test_rerank_refuses_missing_live_price_instead_of_using_yesterday_close
+PASS test_verified_snapshot_prefers_official_mis_over_provider_close
+ALL VERIFIED-PRICE TESTS PASSED | v17.1.0-synced-briefing
+$ /opt/pyvenv/bin/python test_full_qa_v16_7_2.py
+PASS test_buy_engine_live_call_cannot_fallback_to_completed_close
+PASS test_completed_day_next_session_explicitly_carries_reference_price
+PASS test_diagnose_with_live_clears_batch_verified_when_specific_ticker_has_no_price
+PASS test_doctor_buy_intraday_missing_price_is_data_only
+PASS test_doctor_hold_intraday_missing_price_is_data_not_stale_hold_or_sell
+PASS test_mis_batch_requires_executable_requested_price
+PASS test_mis_partial_batch_keeps_only_valid_stock_prices_plus_index
+PASS test_quick_market_discovery_skips_rows_without_latest_trade
+PASS test_selection_core_remains_frozen
+PASS test_ui_has_no_live_price_fallback_to_completed_close_and_invalidates_old_doctor_state
+ALL FULL-QA TESTS PASSED | v17.1.0-synced-briefing
+$ /opt/pyvenv/bin/python test_panic_reversal_v16_8.py
+PASS global context distinguishes crash vs normal
+PASS panic reversal requires rebound; falling knife rejected
+PASS no panic buy below stop or outside broad-shock context
+PASS global shock changes risk budget, not stock selection score
+PASS full-market discovery computes panic-resilience candidate
+ALL PANIC REVERSAL TESTS PASSED | V16.8
+$ /opt/pyvenv/bin/python test_v17_goal_complete.py
+PASS test_canonical_evaluates_all_liquid
+PASS test_canonical_ui_locked
+PASS test_display_detail_cannot_change_ranking
+PASS test_official_breadth_snapshot_parses_once_for_otc
+PASS test_ranking_uses_same_evidence_scale
+PASS test_version_and_weights
+ALL V17 GOAL-COMPLETE TESTS PASSED
+$ /opt/pyvenv/bin/python test_v17_1_sync_briefing.py
+PASS test_retry_repairs_twse_one_day_lag
+PASS test_failed_repair_rolls_everything_to_common_date
+PASS test_horizon_guardrails_are_not_one_size_fits_all
+PASS test_global_summary_is_plain_language
+PASS test_app_has_waiting_reading_panel_and_clear_coverage_labels
+ALL V17.1 SYNC/BRIEFING TESTS PASSED
+$ /opt/pyvenv/bin/python test_v17_3_mobile_board.py
+Alpha Radar V16.7 app import smoke: PASS
+PASS V17.3 board period, category, consensus, duplicate prevention
+$ /opt/pyvenv/bin/python test_v174_integrity.py
+V17.4 integrity PASS
+$ /opt/pyvenv/bin/python test_v17_5_experience.py
+PASS test_background_job_persists_across_client_disconnect
+PASS test_failed_scan_keeps_last_completed_snapshot
+PASS test_scan_cache_skip_is_conservative
+PASS test_briefing_background_is_nonblocking_and_never_scrubs_previous
+PASS test_news_no_old_article_and_no_fake_full_text
+PASS test_tape_insights_and_source_dates
+PASS test_yahoo_batch_tape_levels_from_single_download
+Alpha Radar V16.7 app import smoke: PASS
+PASS test_visual_board_balances_periods_and_no_double_counting
+PASS test_next_session_action_not_mislabeled_as_daily_action
+PASS test_full_screen_html_contains_news_digest_without_leaving_page
+ALL V17.5 EXPERIENCE TESTS PASSED
+$ /opt/pyvenv/bin/python test_research_data_v16_6_2.py
+Alpha Radar V16.6.2 official research data regressions: PASS
+$ /opt/pyvenv/bin/python test_research_details.py
+Alpha Radar V16.6.1 research detail regression: PASS
+$ /opt/pyvenv/bin/python test_research_preload_v16_6_2.py
+Alpha Radar V16.6.2 summary preload regression: PASS
+$ /opt/pyvenv/bin/python test_research_ui_v16_6_2.py
+Alpha Radar V16.6.2 research UI axis regression: PASS
+$ /opt/pyvenv/bin/python smoke_app_import.py
+Alpha Radar V16.7 app import smoke: PASS
+$ /opt/pyvenv/bin/python smoke_decision_views.py
+Alpha Radar V16.7 decision views smoke: PASS
+$ /opt/pyvenv/bin/python smoke_all_views_v16_7_2.py
+ALL APP SURFACE SMOKES PASSED | V16.7.2
+$ /opt/pyvenv/bin/python smoke_app_main.py
+Alpha Radar V16.7 app main smoke: PASS
+ALL V18.6 OPTIMIZATION + V18.5 UI + V18.4 ENGINE OFFLINE QA PASSED

@@ -1,0 +1,23 @@
+# V18.8：相較 V18.7 新增及修改
+
+- `.github/workflows/qa_v17.yml`
+- `.gitignore`
+- `README.md`
+- `RELEASE_V18_8.md`
+- `TEST_OUTPUT_V18_8.txt`
+- `V18_8_CHANGED_FILES.md`
+- `VALIDATION_STATUS_V18_8.md`
+- `WEIGHT_AUDIT_V18_8.json`
+- `app.py`
+- `compare_snapshots_v188.py`
+- `prediction_journal_v188.py`
+- `run_full_qa.py`
+- `scan_job_manager.py`
+- `strategy_validation_v188.py`
+- `test_v185_experience.py`
+- `test_v186_optimization.py`
+- `test_v187_experience.py`
+- `test_v188_rank_contract.py`
+- `v188_board.py`
+- `validate_2026_walkforward.py`
+- `validate_v17_2026_walkforward.py`

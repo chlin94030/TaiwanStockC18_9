@@ -1,0 +1,11 @@
+Alpha Radar V17.5 安裝提醒
+
+1. 下載完整版 ZIP，解壓縮。
+2. 將 alpha_radar_v17_5 資料夾內的全部程式檔放到 GitHub 根目錄（不要連外層資料夾一起多包一層）。
+3. 新增/覆蓋 app.py、market_briefing.py、global_context.py、radar_service.py、operational_tools.py、scan_job_manager.py、briefing_jobs.py 等，不要只覆蓋 app.py。
+4. 保留 .github/workflows/qa_v17.yml、原 Streamlit secrets。不要上傳 Token 或資料庫。
+5. Streamlit Cloud 重新部署，確認頁面顯示 17.5 · MARKET JOURNAL。
+6. 點「背景更新日線模型」後可讀「國際市場」，進度保存在同台伺服器；再次開啟網站會讀上次成功快照。
+7. Cloud 伺服器若休眠／重啟，背景工作無法持續；要防止重下五年資料，需另設定持久化儲存。
+
+完整差異與驗證邊界：RELEASE_V17_5.md

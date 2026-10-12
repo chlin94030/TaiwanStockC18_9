@@ -1,0 +1,8 @@
+{
+  "status": "NOT_RUN",
+  "cause": "FileNotFoundError: 真實股價資料庫不存在: data/daily_prices.sqlite",
+  "real_history_validation": false,
+  "production_weights_modified": false,
+  "note": "需要真實台股日線快取及^TWII；不得以合成行情替代實際歷史選股績效。",
+  "expected_source": "data/daily_prices.sqlite"
+}

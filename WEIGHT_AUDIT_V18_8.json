@@ -1,0 +1,124 @@
+{
+  "audit": {
+    "weight_version": "v18.4-frozen / v18.8-reviewed",
+    "weight_arithmetic_verified": true,
+    "rank_core_frozen": true,
+    "profitability_oos_verified": false,
+    "weight_calibration_status": "UNVERIFIED_REAL_MARKET_OOS",
+    "explanation": "權重可重現、權重和與非負性已核對；缺乏完整歷史 PIT、下市股票與已實現報酬證據，不能稱已實證最優。",
+    "horizons": {
+      "short": {
+        "core": {
+          "technical": 0.52,
+          "empirical": 0.2,
+          "fundamental": 0.08,
+          "flow": 0.2
+        },
+        "dimension": {
+          "quality": 0.15,
+          "chip": 0.22,
+          "momentum": 0.45,
+          "sector": 0.18
+        },
+        "thirteen_factor": {
+          "revenue": 0.075,
+          "margin": 0.045,
+          "cash": 0.03,
+          "trust": 0.066,
+          "institutions": 0.066,
+          "holders": 0.055,
+          "margin_clean": 0.033,
+          "rs": 0.135,
+          "squeeze": 0.09000000000000001,
+          "volume": 0.09000000000000001,
+          "breakout": 0.135,
+          "peers": 0.099,
+          "breadth": 0.081
+        },
+        "maximum_new_factor_blend": 0.55,
+        "weight_sums": {
+          "baseline": 1.0,
+          "dimension": 1.0,
+          "thirteen_factor": 1.0
+        },
+        "arithmetic_ok": true
+      },
+      "mid": {
+        "core": {
+          "technical": 0.42,
+          "empirical": 0.22,
+          "fundamental": 0.22,
+          "flow": 0.14
+        },
+        "dimension": {
+          "quality": 0.28,
+          "chip": 0.24,
+          "momentum": 0.29,
+          "sector": 0.19
+        },
+        "thirteen_factor": {
+          "revenue": 0.14,
+          "margin": 0.084,
+          "cash": 0.05600000000000001,
+          "trust": 0.072,
+          "institutions": 0.072,
+          "holders": 0.06,
+          "margin_clean": 0.036,
+          "rs": 0.087,
+          "squeeze": 0.057999999999999996,
+          "volume": 0.057999999999999996,
+          "breakout": 0.087,
+          "peers": 0.10450000000000001,
+          "breadth": 0.0855
+        },
+        "maximum_new_factor_blend": 0.5,
+        "weight_sums": {
+          "baseline": 1.0,
+          "dimension": 1.0,
+          "thirteen_factor": 1.0
+        },
+        "arithmetic_ok": true
+      },
+      "long": {
+        "core": {
+          "technical": 0.34,
+          "empirical": 0.22,
+          "fundamental": 0.34,
+          "flow": 0.1
+        },
+        "dimension": {
+          "quality": 0.4,
+          "chip": 0.16,
+          "momentum": 0.23,
+          "sector": 0.21
+        },
+        "thirteen_factor": {
+          "revenue": 0.2,
+          "margin": 0.12,
+          "cash": 0.08000000000000002,
+          "trust": 0.048,
+          "institutions": 0.048,
+          "holders": 0.04,
+          "margin_clean": 0.024,
+          "rs": 0.069,
+          "squeeze": 0.046000000000000006,
+          "volume": 0.046000000000000006,
+          "breakout": 0.069,
+          "peers": 0.1155,
+          "breadth": 0.0945
+        },
+        "maximum_new_factor_blend": 0.45,
+        "weight_sums": {
+          "baseline": 1.0,
+          "dimension": 1.0,
+          "thirteen_factor": 1.0
+        },
+        "arithmetic_ok": true
+      }
+    }
+  },
+  "oos": {
+    "status": "NOT_RUN",
+    "reason": "沒有可回放的真實 PIT 歷史決策與後續成交資料"
+  }
+}

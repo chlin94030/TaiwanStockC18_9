@@ -1,0 +1,13 @@
+Alpha Radar V18.0 安裝要點
+
+推薦直接使用「alpha_radar_v18_0_full.zip」，不必自己拼湊原有檔案。
+1. 解壓後進入 alpha_radar_v18_0 資料夾。
+2. 將裡面所有程式及 .github 複製到 GitHub 儲存庫根目錄，覆蓋原檔。
+3. Streamlit Cloud 程式入口維持 app.py；FINMIND_TOKEN 放在 Secrets，勿提交。
+4. 首次點「背景更新日線模型」，然後開「國際市場」頁閱讀；更新完成後點「因子透視」檢視。
+5. 想只替換有改動檔案，改用 alpha_radar_v18_0_replace_files.zip （需先具完整 V17.5 版本）。
+6. 在專案根目錄執行 python run_full_qa.py。
+
+本版檢驗的是軟體契約，不是投資績效、線上真實資料回應速度或實機手機畫面。
+背景更新可跨手機斷線續跑但不能跨伺服器關機持續執行，雲端無持久化硬碟可能失去快取。
+詳細功能與限制請讀 RELEASE_V18_0.md。
